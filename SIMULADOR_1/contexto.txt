@@ -1,0 +1,19 @@
+# 📂 Estrutura do Projeto e Versões
+
+    o    desafio tem dois arquivos apenas por questões de leitura do desafio, mas com mesmo resultado.
+
+## 1. Versão Sequencial (HUs 1 a 6)
+* **Arquivo:** `solucaosequenciada.js` 
+* **Lógica:** Segue a ordem numérica das Histórias de Usuário (1, 2, 3, 4, 5, 6).
+* **Característica:** Nesta versão, as análises estatísticas são feitas inicialmente sobre os dados brutos. A limpeza e identificação de erros ocorrem apenas no final do código. Serve para fins didáticos de compreensão individual de cada requisito.
+
+## 2. Versão Otimizada / Pipeline de Dados (Prioridade HU 5 e 6)
+* **Arquivo:** `solucaoinvertida.js` 
+* **Lógica:** Inverte a ordem de execução para garantir a integridade dos dados.
+    1.  **Início (HUs 5 e 6):** O código começa pela concatenação, detecção de erros e limpeza dos dados 
+    2.  **Meio:** Criação de uma base de dados confiável (`validos`).
+    3.  **Fim (HUs 1, 2, 3, 4):** Executa todas as estatísticas e buscas utilizando apenas a base limpa e transformada.
+* **Característica:** Esta é a versão recomendada para produção, pois garante que nenhum dado inválido ("lixo") contamine os cálculos financeiros.
+
+---
+
